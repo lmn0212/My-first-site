@@ -9,6 +9,12 @@
 body {
     background-color: rgb(235,235,235);
 }
+.cocoon {
+    width: 100%;
+    max-width: 2000px;
+    min-width: 613px;
+    margin: 0 auto;
+}
 header.main {
     width: 100%;
     background-color: rgb(55,55,55);
@@ -57,7 +63,7 @@ header.main .wrapper .name {
     font-size: 20px;
     color: rgb(255,255,255);
     text-align: center;
-    line-height: 66px;
+    line-height: 69px;
 }
 header.main .wrapper .lang {
     float: right;
@@ -97,10 +103,10 @@ nav .links a .location {
 nav .links a {
     display: block;
     float: left;
-    font-size: 13px;
+    font-size: 12px;
     text-decoration: none;
     color: rgb(255,255,255);
-    line-height: 66px;
+    line-height: 69px;
 }
 nav .links div{
     display: block;
@@ -111,9 +117,9 @@ nav .links div{
 }
 nav .links a .withbrdr {
     border-right: 3px solid rgb(118, 118, 118);
-    padding-right: 35px;
+    padding-right: 47px;
     background-image: url(../img/dz1Location.png);
-    background-size: 16px;
+    background-size: 15px;
     background-repeat: no-repeat;
     background-position: 75px;
 }
@@ -196,8 +202,34 @@ input[type=search] {
     text-align: justify;
 
 }
+input[type=text] {
+    width: 160px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    margin-left: 168px;
+
+    font-size: 10px;
+    font-family: Nexa, Verdana, monospace;
+    color: rgb(149,149, 149);
+    text-align: justify;
+    background-image: url(../img/dz1Location.png);
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: 87px;
+
+}
 .social button{
     margin-left: 124px;
+    width: 31px;
+    height: 31px;
+    display: block;
+    position: absolute;
+
+    border: none;
+}
+.social .found{
+    margin-left: 300px;
     width: 31px;
     height: 31px;
     display: block;
@@ -280,7 +312,8 @@ article.main .text {
     float: left;
     width: 33%;
     height: 100%;
-    padding-right: 3px;
+    padding-right: 5px;
+    box-sizing: border-box;
 
     background-color: rgb(55, 55, 55);
     color: #ffffff;
@@ -628,7 +661,7 @@ footer.main .wrapper .name {
     font-size: 20px;
     color: rgb(255,255,255);
     text-align: center;
-    line-height: 66px;
+    line-height: 69px;
 }
 footer.main .wrapper div .main {
     float: right;
@@ -671,3 +704,173 @@ footer.main .bottom a {
     text-decoration: none;
     font-family: Nexa, Verdana, sans-serif;
 }
+.cocoon {
+    min-width: 615px;
+}
+@media screen and (max-width: 1200px) {
+    header.main .wrapper {
+        margin: 0;
+        width: 100%;
+
+    }
+    nav {
+        margin: 0;
+        width: 100%;
+    }
+    nav img {
+        display: none;
+    }
+    nav div .main li .withbrdr {
+        border-right: none;
+        padding: 0;
+    }
+    nav .links a .withbrdr {
+        border-right: none;
+        padding: 0 2px;
+    }
+    nav .links .select .withbrdr {
+        border-right: none;
+        padding: 0 2px;
+    }
+    nav .links div {
+        font-size: 12px;
+    }
+    .social {
+        margin: 0;
+        width: 100%;
+    }
+    .social input {
+        width: 100px;
+
+    }
+    .social button {
+        margin-left: 68px;
+    }
+    .social > img {
+        margin-left: 103px;
+    }
+    .social .share a {
+        padding: 0;
+    }
+    article.main {
+        margin: 0;
+        width: 100%;
+    }
+    article.main .image {
+        width: 65%;
+    }
+    article.main .text h2,
+    article.main .text p {
+        font-size: 16px;
+    }
+    .left_arrow {
+        left: 0;
+    }
+    .gallery {
+        width: 92%;
+    }
+    .gallery .col-4 .inner .caption p,
+    .gallery .col-4 .inner .caption h2 {
+        padding: 0;
+    }
+    .right_arrow {
+        right: 0;
+    }
+    .news {
+        width: 100%;
+    }
+    .articles {
+        width: 100%;
+    }
+    .articles .col-4 .inner2 {
+        font-size: 9px;
+    }
+    .articles .col-4 .inner3 p {
+        font-size: 13px;
+    }
+    .articles .col-4 .inner3 p span {
+        font-size: 27px;
+    }
+    footer.main .wrapper {
+        width: 100%;
+    }
+    footer.main .wrapper .name {
+        font-size: 15px;
+    }
+    footer.main .wrapper div .main li {
+        padding: 0;
+    }
+    footer.main .wrapper div .main li .withbrdr {
+        border: none;
+    }
+    footer.main .wrapper div .main li a span {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 640px) {
+
+    header.main .wrapper .logo {
+        width: 45px;
+        font-size: 30px;
+    }
+    header.main .wrapper .name {
+        padding-left: 10px;
+        font-size: 15px;
+    }
+    header.main .wrapper .lang img {
+        width: 154px;
+    } 
+    nav div .main li {
+        padding: 0px 4px;
+        font-size: 12px;
+    }
+    .social .share {
+        float: left;
+    }
+    article.main .text h2, 
+    article.main .text p {
+        font-size: 10px;
+    }
+    .gallery .col-4 {
+        height: 240px;
+        padding-right: 7px
+    }
+    .gallery .col-4 .inner .caption {
+        font-size: 9px;
+    }
+    .articles .col-8 .inner2 a {
+        padding-left: 5px;
+        padding-right: 30px;
+    }
+    .articles .col-8 .inner2 p {
+        padding-left: 30px;
+    }
+    .articles .col-4 .inner2 {
+        font-size: 7px;
+    }
+    .articles .col-4 .inner3 p span {
+        font-size: 18px;
+        padding: 5px;
+    }
+    footer.main .wrapper .logo {
+        width: 45px;
+        font-size: 30px;
+    }
+    footer.main .wrapper .name {
+        padding-left: 10px;
+        font-size: 12px;
+    }
+    footer.main .wrapper div .main li .withbrdr {
+        padding-right: 8px;
+    }
+    footer.main .wrapper div .main li a span {
+        font-size: 12px;
+    }
+    footer.main .bottom {
+        width: 100%;
+    }
+    footer.main .bottom a {
+        padding-right: 10px;
+    }
+}
+    
